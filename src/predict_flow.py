@@ -1,7 +1,7 @@
 from metaflow import FlowSpec, step, Flow, Parameter, JSONType, conda_base, project, get_namespace
 
 
-@project(name='super_project_2')
+@project(name='iris_project')
 @conda_base(python='3.10.11', libraries={'scikit-learn': '1.5.1'})
 class ClassifierPredictFlow(FlowSpec):
     vector = Parameter('vector', type=JSONType, required=True)

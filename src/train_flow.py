@@ -1,7 +1,7 @@
 from metaflow import FlowSpec, step, conda_base, project, get_namespace, conda
 
 
-@project(name='super_project')
+@project(name='iris_project')
 @conda_base(python='3.10.11', libraries={'scikit-learn': '1.5.1'})
 class ClassifierTrainFlow(FlowSpec):
 
